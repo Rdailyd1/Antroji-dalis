@@ -6,10 +6,14 @@ using System.Threading.Tasks;
 
 namespace Lesson07_03.tax
 {
-    class Program
+    public class Program
     {
         public static decimal Tax(decimal pajamos)
         {
+            if (pajamos<0)
+            {
+                return 0;
+            }
             decimal result = 0;
             if (pajamos <= 40000)
             {
@@ -27,6 +31,8 @@ namespace Lesson07_03.tax
         }
         static void Main(string[] args)
         {
+           
+            Console.ReadLine();
         }
     }
 }

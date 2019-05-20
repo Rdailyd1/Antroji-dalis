@@ -47,6 +47,5 @@ namespace Staciakampis
     }
 }
 
-
 //    Console.WriteLine("Dienu skaicius {0}", knygos.knygaPasskaitytoja());
 //    Console.ReadLine();

@@ -5,7 +5,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5ADB2159-639A-4658-9FF7-76D6CC9BAD54}</ProjectGuid>
+    <ProjectGuid>{EAD33FF4-CE26-4634-B68C-05F8400B936D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Lesson07_03.tax.test</RootNamespace>
