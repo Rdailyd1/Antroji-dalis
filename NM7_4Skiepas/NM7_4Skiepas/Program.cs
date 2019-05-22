@@ -55,7 +55,7 @@ namespace NM7_4Skiepas
             }
             Console.WriteLine("Žmogus buvo skiepytas {0} kart", kiek_kartu);
             Console.WriteLine("Padaryti sie skiepai:");
-            DateTime paskutinioSkdata = new DateTime(0001,01,01);
+            DateTime paskutinioSkdata = new DateTime();
             foreach (Skiepas elementas in sk_sarasas)
             {
                 if (elementas.SkiepoData <= siandien)
