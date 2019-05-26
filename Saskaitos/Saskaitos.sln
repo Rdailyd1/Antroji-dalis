@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saskaitos", "Saskaitos\Saskaitos.csproj", "{ABA0CAC0-0C61-4AEA-A41B-A0CB51C5B0FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saskaita", "Saskaita\Saskaita.csproj", "{02139CDC-9418-438C-BC22-5A32F5101609}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABA0CAC0-0C61-4AEA-A41B-A0CB51C5B0FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABA0CAC0-0C61-4AEA-A41B-A0CB51C5B0FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABA0CAC0-0C61-4AEA-A41B-A0CB51C5B0FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABA0CAC0-0C61-4AEA-A41B-A0CB51C5B0FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02139CDC-9418-438C-BC22-5A32F5101609}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02139CDC-9418-438C-BC22-5A32F5101609}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02139CDC-9418-438C-BC22-5A32F5101609}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02139CDC-9418-438C-BC22-5A32F5101609}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {639F34BD-23F9-43CC-8245-C8C8970014FB}
+	EndGlobalSection
+EndGlobal
