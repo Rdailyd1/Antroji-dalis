@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NM8_1", "NM8_1\NM8_1.csproj", "{1DFE42F4-F006-46C8-BD5F-3C572DD8F819}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pirkinys", "Pirkinys\Pirkinys.csproj", "{BAC760D8-F080-44C2-B082-86CC3A431C5D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1DFE42F4-F006-46C8-BD5F-3C572DD8F819}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DFE42F4-F006-46C8-BD5F-3C572DD8F819}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DFE42F4-F006-46C8-BD5F-3C572DD8F819}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DFE42F4-F006-46C8-BD5F-3C572DD8F819}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAC760D8-F080-44C2-B082-86CC3A431C5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAC760D8-F080-44C2-B082-86CC3A431C5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAC760D8-F080-44C2-B082-86CC3A431C5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAC760D8-F080-44C2-B082-86CC3A431C5D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E3287FE9-EB58-4779-B23B-688A21999E3C}
+	EndGlobalSection
+EndGlobal
