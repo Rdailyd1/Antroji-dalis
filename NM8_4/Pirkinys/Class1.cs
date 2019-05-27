@@ -9,7 +9,7 @@ namespace Pirkinys
         public decimal _KainaVieneto;
         public decimal _KainaViso;
 
-        public string PrekesPaadinimas
+        public string PrekesPavadinimas
         {
             get
             {

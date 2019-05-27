@@ -11,6 +11,7 @@ namespace NM8_4
         static void Main(string[] args)
         {
             int testi_iseiti = 1;
+            int prekesnr = 0;
             while (testi_iseiti == 1)
             {
                 decimal viso = 0;
@@ -33,19 +34,9 @@ namespace NM8_4
                 pirk._KainaVieneto = 5.8m;
                 prekiuSarasas.Add(pirk);
                 int rodyti = 0;
-                Console.WriteLine("Ką norite atlikti[1] Pridėti prekę, [2] Parodyti visą sąrašą");
+                Console.WriteLine("Ką norite atlikti[1] Pridėti prekę, [2] Ištrinti prekę, [3] Parodyti visą sąrašą");
                 rodyti = int.Parse(Console.ReadLine());
-                if (rodyti == 2)
-                {
-                    foreach (var elementas in prekiuSarasas)
-                    {
-                        Console.WriteLine("Prekė: {0}, {1} kg, {2} eur", elementas._PrekėsPavadinimas, elementas._Kiekis, elementas._KainaVieneto);
-                        Console.WriteLine("Kaina viso: {0} eur", elementas.KainaViso);
-                        viso += elementas.KainaViso;
-                    }
-                    Console.WriteLine("Viso kaina: {0}", viso);
-                }
-                else if (rodyti == 1)
+                if (rodyti == 1)
                 {
                     Console.WriteLine("Įveskite prekės pavadinimą");
                     pirk._PrekėsPavadinimas = Console.ReadLine();
@@ -62,10 +53,40 @@ namespace NM8_4
                     }
                     Console.WriteLine("Viso kaina: {0}", viso);
                 }
-
+                else if (rodyti == 2)
+                {
+                    Console.WriteLine("Kurią prekę ištrinti(įveskite prekės Nr.)?");
+                    prekesnr = Convert.ToInt16(Console.ReadLine())-1;
+                    if (prekesnr >= prekiuSarasas.Count() || prekesnr < 0)
+                    {
+                        Console.WriteLine("Tokia preke neegzistuoja");
+                    }
+                    else
+                    {
+                        prekiuSarasas.RemoveAt(prekesnr);
+                        foreach (var elementas in prekiuSarasas)
+                        {
+                            Console.WriteLine("Prekė: {0}, {1} kg, {2} eur", elementas._PrekėsPavadinimas, elementas._Kiekis, elementas._KainaVieneto);
+                            Console.WriteLine("Kaina viso: {0} eur", elementas.KainaViso);
+                            viso += elementas.KainaViso;
+                        }
+                        Console.WriteLine("Viso kaina: {0}", viso);
+                    }
+                }
+                else if (rodyti == 3)
+                {
+                    foreach (var elementas in prekiuSarasas)
+                    {
+                        Console.WriteLine("Prekė: {0}, {1} kg, {2} eur", elementas._PrekėsPavadinimas, elementas._Kiekis, elementas._KainaVieneto);
+                        Console.WriteLine("Kaina viso: {0} eur", elementas.KainaViso);
+                        viso += elementas.KainaViso;
+                    }
+                    Console.WriteLine("Viso kaina: {0}", viso);
+                }
                 Console.WriteLine("[1] Tęsti darbą, [2] Išeiti");
                 testi_iseiti = Convert.ToInt16(Console.ReadLine());
             }
+            Console.WriteLine("Pabaiga");
             Console.ReadLine();
         }
    
