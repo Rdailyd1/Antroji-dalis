@@ -4,20 +4,19 @@ namespace Pirkinys
 {
     public struct pirkinys
     {
-        public string _PrekėsPavadinimas;
-        public int _Kiekis;
-        public decimal _KainaVieneto;
-        public decimal _KainaViso;
+        private string _PrekesPavadinimas;
+        private int _Kiekis;
+        private decimal _KainaVieneto;
 
         public string PrekesPavadinimas
         {
             get
             {
-                return _PrekėsPavadinimas;
+                return _PrekesPavadinimas;
             }
-            private set
+            set
             {
-                _PrekėsPavadinimas = value;
+                _PrekesPavadinimas = value;
             }
         }
         public int Kiekis
@@ -26,7 +25,7 @@ namespace Pirkinys
             {
                 return _Kiekis;
             }
-            private set
+            set
             {
                 _Kiekis = value;
             }
@@ -37,7 +36,7 @@ namespace Pirkinys
             {
                 return _KainaVieneto;
             }
-            private set
+            set
             {
                 _KainaVieneto = value;
             }
@@ -46,8 +45,7 @@ namespace Pirkinys
         {
             get
             {
-                _KainaViso = _KainaVieneto * _Kiekis;
-                return _KainaViso;
+                return _KainaVieneto * _Kiekis;
             }
         }
 
