@@ -10,44 +10,48 @@ namespace ZoologijosSodas
     {
         public struct Gyvunas
         {
-            public string vardas;
-            public string rusis;
+            public string Vardas;
+            public string Rusis;
+            public Gyvunas(string vardas, string rusis)
+            {
+                Vardas = vardas;
+                Rusis = rusis;
+            }
         }
         public struct Zoologijossodas
         {
             public string pavadinimas;
             public string adresas;
-            public  List<Gyvunas> gyvrusisvardai;
+            public  List<Gyvunas> gyvunai;
+
+            public int VisoGyvunu()
+            {
+                return gyvunai.Count();
+            }
+            public List<RusisKiekis> KiekisPagalRusi()
+            {
+                List<string> skirtingosRusys = gyvunai.Select(x => x.Rusis).Distinct().ToList();
+                List<RusisKiekis> kiekispagalrusi = new List<RusisKiekis>();
+                return kiekispagalrusi;
+            }
+        }
+        public struct RusisKiekis
+        {
+            public string rusis;
+            public int kiekis;
         }
         static void Main(string[] args)
-            {
-                List<Zoologijossodas> gyvsarasas = new List<Zoologijossodas>();
-                List<Gyvunas> gyvrusisvardai = new List<Gyvunas>();
-                Gyvunas gyvunai = new Gyvunas();
-                Zoologijossodas gyvsodas = new Zoologijossodas();
-                gyvunai.vardas = "Karalius";
-                gyvunai.rusis = "Liutas";
-                gyvrusisvardai.Add(gyvunai);
-                gyvsodas.adresas = "Kaunas";
-                gyvsodas.pavadinimas = "Centrinis sodas";
-                gyvsarasas.Add(gyvsodas);
-                gyvunai.vardas = "Smalse";
-                gyvunai.rusis = "Lape";
-                gyvrusisvardai.Add(gyvunai);
-                gyvsodas.adresas = "Ryga";
-                gyvsodas.pavadinimas = "Rygos zooparkas";
-                gyvsarasas.Add(gyvsodas);
+        {
+            Zoologijossodas zoologijossodas = new Zoologijossodas();
+            zoologijossodas.adresas = "aaasssddd";
+            zoologijossodas.pavadinimas = "pavadinimas";
+            zoologijossodas.gyvunai = new List<Gyvunas>();
 
-                foreach (Zoologijossodas elementas in gyvsarasas)
-                {
-                    Console.WriteLine(elementas.adresas + " " + elementas.pavadinimas);
-            }
-            foreach (Gyvunas elementas in gyvrusisvardai)
-            {
-                Console.WriteLine(elementas.rusis + " " + elementas.vardas);
-            }
-            Console.ReadLine();
+            zoologijossodas.gyvunai.Add(new Gyvunas("Zigmas", "Lokys"));
+            zoologijossodas.gyvunai.Add(new Gyvunas("Didis", "Erelis"));
+            zoologijossodas.gyvunai.Add(new Gyvunas("Jonas", "Lokys"));
+            zoologijossodas.KiekisPagalRusi();
 
-            }
         }
     }
+}

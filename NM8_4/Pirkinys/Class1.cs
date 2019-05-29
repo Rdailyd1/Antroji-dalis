@@ -49,5 +49,12 @@ namespace Pirkinys
             }
         }
 
+        public pirkinys(string pavadinimas, int kiekis, decimal kaina)
+        {
+            _PrekesPavadinimas = pavadinimas;
+            _Kiekis = kiekis;
+            _KainaVieneto = kaina;
+        }
+
     }
 }
