@@ -85,20 +85,13 @@ class Program
         List<string> skirtRusys = zoologijossodas.gyvunai.Select(x => x.Rusis).Distinct().ToList();
         Console.WriteLine();
         foreach (var rusis in skirtRusys)
-        {
-            int sk = 0;
-            foreach (var kiekis in zoologijossodas.gyvunai)
             {
-
-                if (rusis == kiekis.Rusis)
-                {
-                    sk++;
-                }
+                int sk = 0;
+                sk = SkirtinguGyvunuRusiuSkaicius(zoologijossodas, rusis, sk);
+                Console.WriteLine("Gyvunu rusies {0} yra {1} gyv. ", rusis, sk);
             }
-            Console.WriteLine("Gyvunu rusies {0} yra {1} gyv. ", rusis, sk);
-        }
 
-        foreach (var rusis in skirtRusys)
+            foreach (var rusis in skirtRusys)
         {
             Console.WriteLine();
             Console.WriteLine("Gyvunu rusis {0} yra šiuose zoologijos soduose:", rusis);
@@ -115,17 +108,38 @@ class Program
             {
                 int sk = 0;
                 Console.WriteLine("Zoologijos sode '{0}' yra šie gyvūnai:", sodai.pavadinimas);
-                foreach (var kiekis in zoologijossodas.gyvunai)
-                {
-                    if (sodai.pavadinimas == zoosoduSarasas[kiekis.zooSodoNr - 1].pavadinimas)
-                    {
-                        sk++;
-                        Console.WriteLine(kiekis.Rusis);
-                    }
-                }
+                sk = ZoologijosSodoGyvunai(zoologijossodas, zoosoduSarasas, sodai, sk);
                 Console.WriteLine("Viso šiame sode gyvūnų {0}\n", sk);
             }
-                Console.ReadLine();
+            Console.ReadLine();
     }
-}
+
+        private static int SkirtinguGyvunuRusiuSkaicius(Zoologijossodas zoologijossodas, string rusis, int sk)
+        {
+            foreach (var kiekis in zoologijossodas.gyvunai)
+            {
+
+                if (rusis == kiekis.Rusis)
+                {
+                    sk++;
+                }
+            }
+
+            return sk;
+        }
+
+        private static int ZoologijosSodoGyvunai(Zoologijossodas zoologijossodas, List<Zoologijossodas> zoosoduSarasas, Zoologijossodas sodai, int sk)
+        {
+            foreach (var kiekis in zoologijossodas.gyvunai)
+            {
+                if (sodai.pavadinimas == zoosoduSarasas[kiekis.zooSodoNr - 1].pavadinimas)
+                {
+                    sk++;
+                    Console.WriteLine(kiekis.Rusis);
+                }
+            }
+
+            return sk;
+        }
+    }
 }
