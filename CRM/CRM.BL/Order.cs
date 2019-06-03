@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CRM.BL
 {
-    class Order
+    public class Order
     {
         public Order()
         {
@@ -19,7 +19,7 @@ namespace CRM.BL
         public bool Validate()
         {
             var isValid = true;
-            if (OrderDate != null)
+            if (OrderDate.Date != DateTime.Now.Date)
             {
                 isValid = false;
             }
