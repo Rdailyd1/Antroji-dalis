@@ -5,6 +5,14 @@ namespace CRM.BL
 {
     public class Customer
     {
+        public Customer()
+        {
+           
+        }
+        public Customer(int customerId)
+        {
+
+        }
         public int CustemerID { get; set; }
         public string LastName { get; set; }
         public string FirstName { get; set; }

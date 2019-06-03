@@ -15,7 +15,7 @@ namespace CRM.BL.TEST
             customer.LastName = "Baggins";
 
             string expected = "Baggins, Bilbo";
-           
+
             //--Act
             string actual = customer.FullName;
 
@@ -75,7 +75,7 @@ namespace CRM.BL.TEST
             //--Assert
             Assert.AreEqual(expected, actual);
         }
-           
 
     }
+    
 }
