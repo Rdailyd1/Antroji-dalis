@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biblioteka", "Biblioteka\Bi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BibliotekosKnyga", "BibliotekosKnyga\BibliotekosKnyga.csproj", "{4CBF0257-C19F-4995-BA62-8480B79F9D67}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProjectBiblioteka", "UnitTestProjectBiblioteka\UnitTestProjectBiblioteka.csproj", "{325C4070-391A-4444-95D6-A86B2E113182}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{4CBF0257-C19F-4995-BA62-8480B79F9D67}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CBF0257-C19F-4995-BA62-8480B79F9D67}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CBF0257-C19F-4995-BA62-8480B79F9D67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{325C4070-391A-4444-95D6-A86B2E113182}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{325C4070-391A-4444-95D6-A86B2E113182}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{325C4070-391A-4444-95D6-A86B2E113182}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{325C4070-391A-4444-95D6-A86B2E113182}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
