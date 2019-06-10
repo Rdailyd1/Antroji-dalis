@@ -12,9 +12,7 @@ namespace NM11_1
         static void Main(string[] args)
         {
             var VardasPavarde = new VardasPavarde_cs();
-            VardasPavarde.vardas = "Rolandas";
-            VardasPavarde.pavarde = "Dailydė";
-            Console.WriteLine("{0} {1}", VardasPavarde.vardas, VardasPavarde.pavarde);
+            Console.WriteLine("{0} {1}", VardasPavarde.Vardas("Rolandas"), VardasPavarde.Pavarde("Dailydė"));
             Console.ReadLine();
         }
     }
