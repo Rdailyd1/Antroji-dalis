@@ -50,9 +50,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MokinioRepozitorija\MokinioRepozitorija.csproj">
+      <Project>{dd73804d-2427-4c17-90cb-fda52cea59ee}</Project>
+      <Name>MokinioRepozitorija</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MokinysClass\MokinysClass.csproj">
       <Project>{251e09a3-c4e8-455e-8a45-acface20bf45}</Project>
       <Name>MokinysClass</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReportGenerator\ReportGenerator.csproj">
+      <Project>{2af9e832-1a43-445c-80dd-7b9a9b0fc4e2}</Project>
+      <Name>ReportGenerator</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
