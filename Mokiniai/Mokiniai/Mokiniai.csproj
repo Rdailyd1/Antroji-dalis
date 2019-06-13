@@ -49,5 +49,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MokinysClass\MokinysClass.csproj">
+      <Project>{251e09a3-c4e8-455e-8a45-acface20bf45}</Project>
+      <Name>MokinysClass</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
