@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MokinioRepozitorija", "Moki
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportGenerator", "ReportGenerator\ReportGenerator.csproj", "{2AF9E832-1A43-445C-80DD-7B9A9B0FC4E2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProjectMokiniai", "UnitTestProjectMokiniai\UnitTestProjectMokiniai.csproj", "{F4EF3827-97DD-4D72-A77A-B3358C9FA942}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{2AF9E832-1A43-445C-80DD-7B9A9B0FC4E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2AF9E832-1A43-445C-80DD-7B9A9B0FC4E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2AF9E832-1A43-445C-80DD-7B9A9B0FC4E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4EF3827-97DD-4D72-A77A-B3358C9FA942}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4EF3827-97DD-4D72-A77A-B3358C9FA942}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4EF3827-97DD-4D72-A77A-B3358C9FA942}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4EF3827-97DD-4D72-A77A-B3358C9FA942}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

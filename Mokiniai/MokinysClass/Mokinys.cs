@@ -23,11 +23,18 @@ namespace MokinysClass
         public int VidurkioSkaiciavimas(List<int> PazymiuSarasas)
         {
             int vidurkis = 0;
-            foreach (var item in PazymiuSarasas)
+            if (PazymiuSarasas.Count > 0)
             {
-                vidurkis += item;
+                foreach (var item in PazymiuSarasas)
+                {
+                    vidurkis += item;
+                }
+                return vidurkis / PazymiuSarasas.Count;
             }
-            return vidurkis/PazymiuSarasas.Count;
+            else
+            {
+                return 0;
+            }
         }
     }
 }
