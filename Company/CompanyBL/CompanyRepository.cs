@@ -5,9 +5,10 @@ using System.Linq;
 
 namespace CompanyBL
 {
-    class CompanyRepository
+    public class CompanyRepository
     {
         private List<Company> companies = new List<Company>();
+
         public List<Company> Retrieve()
         {
             return companies;
@@ -18,13 +19,12 @@ namespace CompanyBL
         }
         public CompanyRepository()
         {
-            companies.Add(new Company(1, "Ideju sala", null ));
-            companies.Add(new Company(1, "Irankiai", null));
-            companies.Add(new Company(2, "Geras namas", null));
-            companies.Add(new Company(2, "Muras", null));
-            companies.Add(new Company(2, "Vijoklis", null));
+            companies.Add(new Company(1, "Ideju sala", null, false));
+            companies.Add(new Company(2, "Irankiai", null, true));
+            companies.Add(new Company(3, "Geras namas", null, false));
+            companies.Add(new Company(4, "Muras", null, true));
+            companies.Add(new Company(5, "Vijoklis", null, false));
         }
-        
-        
+
     }
 }

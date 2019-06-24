@@ -14,8 +14,8 @@ namespace Company
             CompanyBL.Company company = new CompanyBL.Company();
             List<string> TelSarasas1 = new List<string>();
             List<string> TelSarasas2 = new List<string>();
-            var company1 = new CompanyBL.Company(1, "Ideju sala", TelSarasas1);
-            var company2 = new CompanyBL.Company(2, "Geras namas", TelSarasas2);
+            var company1 = new CompanyBL.Company(1, "Ideju sala", TelSarasas1, false);
+            var company2 = new CompanyBL.Company(2, "Geras namas", TelSarasas2, false);
             List<CompanyBL.Company> kompanijos = new List<CompanyBL.Company>();
             kompanijos.Add(company1);
             kompanijos.Add(company2);
@@ -41,6 +41,22 @@ namespace Company
             int id = Convert.ToInt16(Console.ReadLine());
             Console.WriteLine("Telefono Nr. skaičius:");
             Console.WriteLine(company.TelefonoNrSkaicius(kompanijos, id));
+
+            CompanyRepository repo = new CompanyRepository();
+            var kompanijuSarasas = repo.Retrieve();
+            Console.WriteLine("Kompanijos ID ir vardas:");
+            foreach (var elementas in kompanijuSarasas)
+            {
+                Console.WriteLine($"ID={elementas.ID}, Vardas={elementas.Name} ");
+            }
+            Console.WriteLine("Iveskite imones ID kuria reikia parodyti:");
+            int nr = Convert.ToInt16(Console.ReadLine());
+            Console.WriteLine($"ID={repo.Retrieve(nr).ID}, Vardas={repo.Retrieve(nr).Name}, Nekomercine Organizacija={repo.Retrieve(nr).NekomercineOrganizacija} ");
+            var ReportGenerator = new ReportGenerator(repo);
+            ReportGenerator.GenerateCompanyReport();
+            string kompanijuAtaskaita = ReportGenerator.GenerateCompanyReport();
+            Console.WriteLine("Ataskaita:");
+            Console.WriteLine(kompanijuAtaskaita);
             Console.ReadLine();
         }
     }
