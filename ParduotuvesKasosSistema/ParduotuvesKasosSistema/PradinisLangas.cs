@@ -186,6 +186,7 @@ namespace ParduotuvesKasosSistema
             lblIdekitePinigus.Visible = false;
             txbApmokejimas.Visible = false;
             btnIdeti.Visible = false;
+            prekenuskenuota_lbl.Visible = false;
         }
 
         private void LblIsvalyti_Click(object sender, EventArgs e)

@@ -66,7 +66,7 @@ namespace ParduotuvesKasosSistema
             // 
             this.btnApmoketi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnApmoketi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.btnApmoketi.Location = new System.Drawing.Point(352, 433);
+            this.btnApmoketi.Location = new System.Drawing.Point(314, 432);
             this.btnApmoketi.Name = "btnApmoketi";
             this.btnApmoketi.Size = new System.Drawing.Size(115, 29);
             this.btnApmoketi.TabIndex = 54;
@@ -76,7 +76,7 @@ namespace ParduotuvesKasosSistema
             // 
             // txbApmokejimas
             // 
-            this.txbApmokejimas.Location = new System.Drawing.Point(352, 491);
+            this.txbApmokejimas.Location = new System.Drawing.Point(314, 490);
             this.txbApmokejimas.Name = "txbApmokejimas";
             this.txbApmokejimas.Size = new System.Drawing.Size(153, 20);
             this.txbApmokejimas.TabIndex = 55;
@@ -84,7 +84,7 @@ namespace ParduotuvesKasosSistema
             // 
             // btnCekis
             // 
-            this.btnCekis.Location = new System.Drawing.Point(352, 298);
+            this.btnCekis.Location = new System.Drawing.Point(314, 297);
             this.btnCekis.Name = "btnCekis";
             this.btnCekis.Size = new System.Drawing.Size(115, 47);
             this.btnCekis.TabIndex = 77;
@@ -95,7 +95,7 @@ namespace ParduotuvesKasosSistema
             // lblIdekitePinigus
             // 
             this.lblIdekitePinigus.AutoSize = true;
-            this.lblIdekitePinigus.Location = new System.Drawing.Point(349, 475);
+            this.lblIdekitePinigus.Location = new System.Drawing.Point(311, 474);
             this.lblIdekitePinigus.Name = "lblIdekitePinigus";
             this.lblIdekitePinigus.Size = new System.Drawing.Size(73, 13);
             this.lblIdekitePinigus.TabIndex = 56;
@@ -104,7 +104,7 @@ namespace ParduotuvesKasosSistema
             // 
             // btnIvestiKoda
             // 
-            this.btnIvestiKoda.Location = new System.Drawing.Point(391, 123);
+            this.btnIvestiKoda.Location = new System.Drawing.Point(353, 122);
             this.btnIvestiKoda.Name = "btnIvestiKoda";
             this.btnIvestiKoda.Size = new System.Drawing.Size(115, 30);
             this.btnIvestiKoda.TabIndex = 76;
@@ -115,7 +115,7 @@ namespace ParduotuvesKasosSistema
             // btnIdeti
             // 
             this.btnIdeti.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.btnIdeti.Location = new System.Drawing.Point(511, 485);
+            this.btnIdeti.Location = new System.Drawing.Point(473, 484);
             this.btnIdeti.Name = "btnIdeti";
             this.btnIdeti.Size = new System.Drawing.Size(40, 30);
             this.btnIdeti.TabIndex = 57;
@@ -127,7 +127,7 @@ namespace ParduotuvesKasosSistema
             // lblKodas
             // 
             this.lblKodas.AutoSize = true;
-            this.lblKodas.Location = new System.Drawing.Point(413, 169);
+            this.lblKodas.Location = new System.Drawing.Point(375, 168);
             this.lblKodas.Name = "lblKodas";
             this.lblKodas.Size = new System.Drawing.Size(37, 13);
             this.lblKodas.TabIndex = 75;
@@ -137,7 +137,7 @@ namespace ParduotuvesKasosSistema
             // lblPavadinimas
             // 
             this.lblPavadinimas.AutoSize = true;
-            this.lblPavadinimas.Location = new System.Drawing.Point(248, 169);
+            this.lblPavadinimas.Location = new System.Drawing.Point(210, 168);
             this.lblPavadinimas.Name = "lblPavadinimas";
             this.lblPavadinimas.Size = new System.Drawing.Size(67, 13);
             this.lblPavadinimas.TabIndex = 74;
@@ -147,7 +147,7 @@ namespace ParduotuvesKasosSistema
             // cmbPrekes
             // 
             this.cmbPrekes.FormattingEnabled = true;
-            this.cmbPrekes.Location = new System.Drawing.Point(238, 184);
+            this.cmbPrekes.Location = new System.Drawing.Point(200, 183);
             this.cmbPrekes.Name = "cmbPrekes";
             this.cmbPrekes.Size = new System.Drawing.Size(96, 21);
             this.cmbPrekes.TabIndex = 73;
@@ -158,16 +158,16 @@ namespace ParduotuvesKasosSistema
             // 
             this.lblIsvalyti.AutoSize = true;
             this.lblIsvalyti.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lblIsvalyti.Location = new System.Drawing.Point(750, 128);
+            this.lblIsvalyti.Location = new System.Drawing.Point(786, 127);
             this.lblIsvalyti.Name = "lblIsvalyti";
-            this.lblIsvalyti.Size = new System.Drawing.Size(100, 13);
+            this.lblIsvalyti.Size = new System.Drawing.Size(78, 13);
             this.lblIsvalyti.TabIndex = 72;
-            this.lblIsvalyti.Text = "Išvalyti visą krepšelį";
+            this.lblIsvalyti.Text = "Išvalyti krepšelį";
             this.lblIsvalyti.Click += new System.EventHandler(this.LblIsvalyti_Click);
             // 
             // btnPardavimuAtaskaita
             // 
-            this.btnPardavimuAtaskaita.Location = new System.Drawing.Point(473, 298);
+            this.btnPardavimuAtaskaita.Location = new System.Drawing.Point(435, 297);
             this.btnPardavimuAtaskaita.Name = "btnPardavimuAtaskaita";
             this.btnPardavimuAtaskaita.Size = new System.Drawing.Size(115, 47);
             this.btnPardavimuAtaskaita.TabIndex = 71;
@@ -180,7 +180,7 @@ namespace ParduotuvesKasosSistema
             this.lblprekiuSkaicius.AutoSize = true;
             this.lblprekiuSkaicius.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.lblprekiuSkaicius.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblprekiuSkaicius.Location = new System.Drawing.Point(790, 83);
+            this.lblprekiuSkaicius.Location = new System.Drawing.Point(826, 82);
             this.lblprekiuSkaicius.Name = "lblprekiuSkaicius";
             this.lblprekiuSkaicius.Size = new System.Drawing.Size(17, 17);
             this.lblprekiuSkaicius.TabIndex = 70;
@@ -190,7 +190,7 @@ namespace ParduotuvesKasosSistema
             // 
             this.lblSuma.AutoSize = true;
             this.lblSuma.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.lblSuma.Location = new System.Drawing.Point(594, 417);
+            this.lblSuma.Location = new System.Drawing.Point(630, 416);
             this.lblSuma.Name = "lblSuma";
             this.lblSuma.Size = new System.Drawing.Size(64, 13);
             this.lblSuma.TabIndex = 69;
@@ -198,7 +198,7 @@ namespace ParduotuvesKasosSistema
             // 
             // tbxSuma
             // 
-            this.tbxSuma.Location = new System.Drawing.Point(664, 414);
+            this.tbxSuma.Location = new System.Drawing.Point(700, 413);
             this.tbxSuma.Name = "tbxSuma";
             this.tbxSuma.Size = new System.Drawing.Size(146, 20);
             this.tbxSuma.TabIndex = 68;
@@ -206,7 +206,7 @@ namespace ParduotuvesKasosSistema
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(652, 140);
+            this.label3.Location = new System.Drawing.Point(688, 139);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(81, 13);
             this.label3.TabIndex = 67;
@@ -216,7 +216,7 @@ namespace ParduotuvesKasosSistema
             // 
             this.lbxPerkamuPrekiuSarasas.FormattingEnabled = true;
             this.lbxPerkamuPrekiuSarasas.HorizontalScrollbar = true;
-            this.lbxPerkamuPrekiuSarasas.Location = new System.Drawing.Point(603, 169);
+            this.lbxPerkamuPrekiuSarasas.Location = new System.Drawing.Point(639, 168);
             this.lbxPerkamuPrekiuSarasas.Name = "lbxPerkamuPrekiuSarasas";
             this.lbxPerkamuPrekiuSarasas.ScrollAlwaysVisible = true;
             this.lbxPerkamuPrekiuSarasas.Size = new System.Drawing.Size(207, 238);
@@ -228,7 +228,7 @@ namespace ParduotuvesKasosSistema
             this.prekenuskenuota_lbl.AutoSize = true;
             this.prekenuskenuota_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.prekenuskenuota_lbl.ForeColor = System.Drawing.Color.Green;
-            this.prekenuskenuota_lbl.Location = new System.Drawing.Point(328, 255);
+            this.prekenuskenuota_lbl.Location = new System.Drawing.Point(290, 254);
             this.prekenuskenuota_lbl.Name = "prekenuskenuota_lbl";
             this.prekenuskenuota_lbl.Size = new System.Drawing.Size(139, 17);
             this.prekenuskenuota_lbl.TabIndex = 65;
@@ -238,7 +238,7 @@ namespace ParduotuvesKasosSistema
             // patvirtinti_btn
             // 
             this.patvirtinti_btn.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.patvirtinti_btn.Location = new System.Drawing.Point(502, 180);
+            this.patvirtinti_btn.Location = new System.Drawing.Point(464, 179);
             this.patvirtinti_btn.Name = "patvirtinti_btn";
             this.patvirtinti_btn.Size = new System.Drawing.Size(65, 29);
             this.patvirtinti_btn.TabIndex = 64;
@@ -248,7 +248,7 @@ namespace ParduotuvesKasosSistema
             // 
             // prekesPridejimas
             // 
-            this.prekesPridejimas.Location = new System.Drawing.Point(231, 298);
+            this.prekesPridejimas.Location = new System.Drawing.Point(193, 297);
             this.prekesPridejimas.Name = "prekesPridejimas";
             this.prekesPridejimas.Size = new System.Drawing.Size(115, 47);
             this.prekesPridejimas.TabIndex = 63;
@@ -260,7 +260,7 @@ namespace ParduotuvesKasosSistema
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label2.Location = new System.Drawing.Point(189, 104);
+            this.label2.Location = new System.Drawing.Point(151, 103);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(378, 13);
             this.label2.TabIndex = 62;
@@ -268,7 +268,7 @@ namespace ParduotuvesKasosSistema
             // 
             // txb_skenavimas
             // 
-            this.txb_skenavimas.Location = new System.Drawing.Point(392, 185);
+            this.txb_skenavimas.Location = new System.Drawing.Point(354, 184);
             this.txb_skenavimas.Name = "txb_skenavimas";
             this.txb_skenavimas.Size = new System.Drawing.Size(88, 20);
             this.txb_skenavimas.TabIndex = 61;
@@ -278,7 +278,7 @@ namespace ParduotuvesKasosSistema
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.label1.Location = new System.Drawing.Point(340, 45);
+            this.label1.Location = new System.Drawing.Point(302, 44);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(248, 24);
             this.label1.TabIndex = 59;
@@ -286,7 +286,7 @@ namespace ParduotuvesKasosSistema
             // 
             // btnKlasifikatorius
             // 
-            this.btnKlasifikatorius.Location = new System.Drawing.Point(231, 119);
+            this.btnKlasifikatorius.Location = new System.Drawing.Point(193, 118);
             this.btnKlasifikatorius.Name = "btnKlasifikatorius";
             this.btnKlasifikatorius.Size = new System.Drawing.Size(115, 34);
             this.btnKlasifikatorius.TabIndex = 58;
@@ -298,7 +298,7 @@ namespace ParduotuvesKasosSistema
             // 
             this.krepselis_btn.BackColor = System.Drawing.Color.White;
             this.krepselis_btn.Image = global::ParduotuvesKasosSistema.Properties.Resources.krepselis1;
-            this.krepselis_btn.Location = new System.Drawing.Point(750, 83);
+            this.krepselis_btn.Location = new System.Drawing.Point(786, 82);
             this.krepselis_btn.Name = "krepselis_btn";
             this.krepselis_btn.Size = new System.Drawing.Size(41, 38);
             this.krepselis_btn.TabIndex = 60;
@@ -311,7 +311,7 @@ namespace ParduotuvesKasosSistema
             this.lblCekioPrekTrynimas.AutoSize = true;
             this.lblCekioPrekTrynimas.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.lblCekioPrekTrynimas.ForeColor = System.Drawing.Color.Red;
-            this.lblCekioPrekTrynimas.Location = new System.Drawing.Point(607, 153);
+            this.lblCekioPrekTrynimas.Location = new System.Drawing.Point(643, 152);
             this.lblCekioPrekTrynimas.Name = "lblCekioPrekTrynimas";
             this.lblCekioPrekTrynimas.Size = new System.Drawing.Size(181, 13);
             this.lblCekioPrekTrynimas.TabIndex = 78;
@@ -320,7 +320,7 @@ namespace ParduotuvesKasosSistema
             // 
             // nmKiekis
             // 
-            this.nmKiekis.Location = new System.Drawing.Point(340, 185);
+            this.nmKiekis.Location = new System.Drawing.Point(302, 184);
             this.nmKiekis.Name = "nmKiekis";
             this.nmKiekis.Size = new System.Drawing.Size(49, 20);
             this.nmKiekis.TabIndex = 79;
@@ -329,7 +329,7 @@ namespace ParduotuvesKasosSistema
             // lblKiekis
             // 
             this.lblKiekis.AutoSize = true;
-            this.lblKiekis.Location = new System.Drawing.Point(349, 169);
+            this.lblKiekis.Location = new System.Drawing.Point(311, 168);
             this.lblKiekis.Name = "lblKiekis";
             this.lblKiekis.Size = new System.Drawing.Size(35, 13);
             this.lblKiekis.TabIndex = 80;

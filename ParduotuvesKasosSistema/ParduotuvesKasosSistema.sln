@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParduotuvesKasosSistema", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParduotuvesKasosSistemaBL", "ParduotuvesKasosSistemaBL\ParduotuvesKasosSistemaBL.csproj", "{1BECADE3-17D9-47A6-AB77-6994D1AD9B25}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProjectKasosSistema", "UnitTestProjectKasosSistema\UnitTestProjectKasosSistema.csproj", "{7B17EA0C-AA53-45BC-A80C-5904D10BE403}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{1BECADE3-17D9-47A6-AB77-6994D1AD9B25}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1BECADE3-17D9-47A6-AB77-6994D1AD9B25}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1BECADE3-17D9-47A6-AB77-6994D1AD9B25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B17EA0C-AA53-45BC-A80C-5904D10BE403}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B17EA0C-AA53-45BC-A80C-5904D10BE403}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B17EA0C-AA53-45BC-A80C-5904D10BE403}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B17EA0C-AA53-45BC-A80C-5904D10BE403}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
