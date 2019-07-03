@@ -31,7 +31,7 @@
             this.lblSuma = new System.Windows.Forms.Label();
             this.tbxCekioSuma = new System.Windows.Forms.TextBox();
             this.lbxCekis = new System.Windows.Forms.ListBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblPirkimoCekis = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblSuma
@@ -59,15 +59,15 @@
             this.lbxCekis.Size = new System.Drawing.Size(192, 238);
             this.lbxCekis.TabIndex = 25;
             // 
-            // label1
+            // lblPirkimoCekis
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.label1.Location = new System.Drawing.Point(215, 58);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(133, 24);
-            this.label1.TabIndex = 24;
-            this.label1.Text = "Pirkimo čekis";
+            this.lblPirkimoCekis.AutoSize = true;
+            this.lblPirkimoCekis.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.lblPirkimoCekis.Location = new System.Drawing.Point(203, 59);
+            this.lblPirkimoCekis.Name = "lblPirkimoCekis";
+            this.lblPirkimoCekis.Size = new System.Drawing.Size(133, 24);
+            this.lblPirkimoCekis.TabIndex = 24;
+            this.lblPirkimoCekis.Text = "Pirkimo čekis";
             // 
             // CekioForma
             // 
@@ -77,7 +77,7 @@
             this.Controls.Add(this.lblSuma);
             this.Controls.Add(this.tbxCekioSuma);
             this.Controls.Add(this.lbxCekis);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblPirkimoCekis);
             this.Name = "CekioForma";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Čekis";
@@ -92,6 +92,6 @@
         private System.Windows.Forms.Label lblSuma;
         private System.Windows.Forms.TextBox tbxCekioSuma;
         private System.Windows.Forms.ListBox lbxCekis;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblPirkimoCekis;
     }
 }

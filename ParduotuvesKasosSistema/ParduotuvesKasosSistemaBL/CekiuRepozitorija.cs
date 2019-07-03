@@ -43,5 +43,9 @@ namespace ParduotuvesKasosSistemaBL
         {
             einamasisCekis.CekioElementuSarasas.Clear();
         }
+        public void PrekiuTrynimas(int index)
+        {
+            einamasisCekis.CekioElementuSarasas.RemoveAt(index);
+        }
     }
 }

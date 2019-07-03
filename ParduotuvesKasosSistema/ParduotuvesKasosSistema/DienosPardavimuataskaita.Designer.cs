@@ -1,7 +1,7 @@
 ﻿using ParduotuvesKasosSistemaBL;
 namespace ParduotuvesKasosSistema
 {
-    partial class DienosPardavimuAtaskaita
+    partial class PardavimuAtaskaita
     {
      
         /// <summary>
@@ -30,21 +30,22 @@ namespace ParduotuvesKasosSistema
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblDienosPardavimuAtaskaita = new System.Windows.Forms.Label();
             this.lbxCekioAtaskaita = new System.Windows.Forms.ListBox();
             this.lblSuma = new System.Windows.Forms.Label();
             this.tbxCekiuSuma = new System.Windows.Forms.TextBox();
+            this.lblAtsisiustiAtaskaita = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
-            // label1
+            // lblDienosPardavimuAtaskaita
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.label1.Location = new System.Drawing.Point(215, 48);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(129, 24);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Prekių čekiai";
+            this.lblDienosPardavimuAtaskaita.AutoSize = true;
+            this.lblDienosPardavimuAtaskaita.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.lblDienosPardavimuAtaskaita.Location = new System.Drawing.Point(190, 49);
+            this.lblDienosPardavimuAtaskaita.Name = "lblDienosPardavimuAtaskaita";
+            this.lblDienosPardavimuAtaskaita.Size = new System.Drawing.Size(193, 24);
+            this.lblDienosPardavimuAtaskaita.TabIndex = 2;
+            this.lblDienosPardavimuAtaskaita.Text = "Pardavimų ataskaita";
             // 
             // lbxCekioAtaskaita
             // 
@@ -71,18 +72,30 @@ namespace ParduotuvesKasosSistema
             this.tbxCekiuSuma.Size = new System.Drawing.Size(146, 20);
             this.tbxCekiuSuma.TabIndex = 22;
             // 
-            // DienosPardavimuAtaskaita
+            // lblAtsisiustiAtaskaita
+            // 
+            this.lblAtsisiustiAtaskaita.AutoSize = true;
+            this.lblAtsisiustiAtaskaita.Location = new System.Drawing.Point(167, 388);
+            this.lblAtsisiustiAtaskaita.Name = "lblAtsisiustiAtaskaita";
+            this.lblAtsisiustiAtaskaita.Size = new System.Drawing.Size(121, 13);
+            this.lblAtsisiustiAtaskaita.TabIndex = 79;
+            this.lblAtsisiustiAtaskaita.TabStop = true;
+            this.lblAtsisiustiAtaskaita.Text = "Atsisiųsti excel ataskaitą";
+            this.lblAtsisiustiAtaskaita.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LblAtsisiustiAtaskaita_LinkClicked);
+            // 
+            // PardavimuAtaskaita
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(557, 450);
+            this.Controls.Add(this.lblAtsisiustiAtaskaita);
             this.Controls.Add(this.lblSuma);
             this.Controls.Add(this.tbxCekiuSuma);
             this.Controls.Add(this.lbxCekioAtaskaita);
-            this.Controls.Add(this.label1);
-            this.Name = "DienosPardavimuAtaskaita";
+            this.Controls.Add(this.lblDienosPardavimuAtaskaita);
+            this.Name = "PardavimuAtaskaita";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Dienos pardavimų ataskaita";
+            this.Text = "Pardavimų ataskaita";
             this.Load += new System.EventHandler(this.DienosPardavimuAtaskaita_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -91,9 +104,10 @@ namespace ParduotuvesKasosSistema
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblDienosPardavimuAtaskaita;
         private System.Windows.Forms.ListBox lbxCekioAtaskaita;
         private System.Windows.Forms.Label lblSuma;
         private System.Windows.Forms.TextBox tbxCekiuSuma;
+        private System.Windows.Forms.LinkLabel lblAtsisiustiAtaskaita;
     }
 }

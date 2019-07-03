@@ -14,6 +14,10 @@ namespace ParduotuvesKasosSistemaBL
             prekes.Add(new Preke(2, "234", "Sviestas", 2.1m));
             prekes.Add(new Preke(3, "345", "Pienas", 1.3m));
             prekes.Add(new Preke(4, "456", "Obuoliai", 1.2m));
+            prekes.Add(new Preke(5, "321", "Bulvės", 1.5m));
+            prekes.Add(new Preke(6, "432", "Žuvis", 2.1m));
+            prekes.Add(new Preke(7, "543", "Mėsa", 1.3m));
+            prekes.Add(new Preke(8, "654", "Grikiai", 1.2m));
         }
         public void PrekiuPridejimas(string prekesPavadinimas, string prekesKodas, decimal prekesVienetoKaina)
         {

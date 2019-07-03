@@ -18,9 +18,13 @@ namespace ParduotuvesKasosSistema
         {
             InitializeComponent();
         }
-        public CekioForma(CekiuRepozitorija cekiuRepozitorija) : this()
+        public CekioForma(CekiuRepozitorija cekiuRepozitorija, bool krepselis) : this()
         {
             _cekiuRepozitorija = cekiuRepozitorija;
+            if (krepselis == true)
+            {
+                lblPirkimoCekis.Text = "Pirkinių krepšelis";
+            }
         }
         decimal cekioSuma = 0;
         private void CekioForma_Load(object sender, EventArgs e)
@@ -41,7 +45,7 @@ namespace ParduotuvesKasosSistema
                 lbxCekis.Items.Add("");
                 foreach (var elem in report)
                 {
-                    lbxCekis.Items.Add(string.Format(elem.PrekesPavadinimas + ", kodas: " + elem.Kodas + ", kaina " + elem.PrekesKaina + " eur "));
+                    lbxCekis.Items.Add(string.Format(elem.PrekesPavadinimas + "; kodas " + elem.Kodas + "; kaina " + elem.PrekesKaina + " eur "));
                     cekioSuma = cekioSuma + elem.PrekesKaina;
                 }
             }

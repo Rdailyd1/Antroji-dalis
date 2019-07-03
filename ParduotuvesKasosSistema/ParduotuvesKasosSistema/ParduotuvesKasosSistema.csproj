@@ -33,6 +33,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\..\..\..\Windows\assembly\GAC_MSIL\Microsoft.Office.Interop.Excel\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -57,12 +62,6 @@
     </Compile>
     <Compile Include="CekioAtaskaita.Designer.cs">
       <DependentUpon>CekioAtaskaita.cs</DependentUpon>
-    </Compile>
-    <Compile Include="KrepselioForma.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="KrepselioForma.Designer.cs">
-      <DependentUpon>KrepselioForma.cs</DependentUpon>
     </Compile>
     <Compile Include="PradinisLangas.cs">
       <SubType>Form</SubType>
@@ -95,9 +94,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CekioAtaskaita.resx">
       <DependentUpon>CekioAtaskaita.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="KrepselioForma.resx">
-      <DependentUpon>KrepselioForma.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PradinisLangas.resx">
       <DependentUpon>PradinisLangas.cs</DependentUpon>
@@ -151,6 +147,9 @@
       <Project>{1becade3-17d9-47a6-ab77-6994d1ad9b25}</Project>
       <Name>ParduotuvesKasosSistemaBL</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20160610_152829.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
