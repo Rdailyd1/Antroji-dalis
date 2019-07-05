@@ -64,18 +64,7 @@ namespace ParduotuvesKasosSistema
             }
             _cekiuRepozitorija.PradetiNaujaCeki();
         }
-        private void btnPrekiuRedagavimas_Click(object sender, EventArgs e)
-        {
-            PrekiuRedagavimas prekiuredagavimas = new PrekiuRedagavimas();
-            prekiuredagavimas.Show();
-        }
-
-        private void btnTrynimas_Click(object sender, EventArgs e)
-        {
-            PrekiuTrynimas prekiutrynimas = new PrekiuTrynimas();
-            prekiutrynimas.Show();
-        }
-
+      
         private void Krepselis_btn_Click(object sender, EventArgs e)
         {
             if (lblprekiuSkaicius.Text == "0")
